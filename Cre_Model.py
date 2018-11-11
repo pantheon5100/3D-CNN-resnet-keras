@@ -47,7 +47,7 @@ def identity_Block(inpt, nb_filter, kernel_size, strides=1, with_conv_shortcut=F
 #         return x
 
 
-def resnet_34(shape, classes):
+def resnet(shape, classes):
     inpt = Input(shape=shape)
     x = ZeroPadding3D((1, 1, 1), data_format='channels_first')(inpt)
 
